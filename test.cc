@@ -1,4 +1,5 @@
-#include <stdio>
+#include "function.cc"
+
 using namespace std;
 
 class C
@@ -21,23 +22,23 @@ C::~C()
 }
 
 
-int main(argc, argv) {
+int main() {
     // add some
-    for (size_t i = 0; i < count; i++)
+    for (int i = 0; i < 100; i++)
     {
         // can I add more code here?
         // yes I can
     }
     
-    for (int i = length - 1; i >= 0; i--)
+    for (int i = 10 - 1; i >= 0; i--)
     {
         /* code */
-        cerr << i << endl;
+        //std::cerr << i << endl;
 
         // add more comments into master
         // add branch-B specific comments
         if (i > 0) {
-            cerr << i * i ;
+            //std::cerr << i * i ;
         }
     }
     
