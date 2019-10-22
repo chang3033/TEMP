@@ -33,6 +33,7 @@ int main(argc, argv) {
     {
         /* code */
         cerr << i << endl;
+        // added some comments in branch A
     }
     
 
