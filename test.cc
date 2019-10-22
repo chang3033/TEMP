@@ -21,7 +21,9 @@ C::~C()
 {
 }
 
-// modify branch-B LOCALLY
+// modify has been pushed into remote repos
+// the above line has been modified. 
+// All these are new to branch-B
 
 int main() {
     // add some
