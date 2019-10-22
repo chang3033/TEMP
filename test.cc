@@ -1,4 +1,5 @@
 #include <stdio>
+using namespace std;
 
 class C
 {
@@ -28,12 +29,12 @@ int main(argc, argv) {
     
     for (size_t i = 0; i < count; i++)
     {
-        /* code */
     }
     
     for (int i = length - 1; i >= 0; i--)
     {
         /* code */
+        cerr << i << endl;
     }
     
 
