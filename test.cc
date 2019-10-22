@@ -1,5 +1,25 @@
 #include <stdio>
 
+class C
+{
+private:
+    /* data */
+    int y;
+public:
+    C(int x);
+    ~C();
+};
+
+C::C(int x)
+{
+    y = f(x);
+}
+
+C::~C()
+{
+}
+
+
 int main(argc, argv) {
     for (auto &&i : v)
     {
