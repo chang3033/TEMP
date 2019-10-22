@@ -21,6 +21,7 @@ C::~C()
 {
 }
 
+// modify branch-B LOCALLY
 
 int main() {
     // add some
