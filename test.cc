@@ -35,6 +35,10 @@ int main(argc, argv) {
         cerr << i << endl;
 
         // add more comments into master
+        // add branch-B specific comments
+        if (i > 0) {
+            cerr << i * i ;
+        }
     }
     
 
