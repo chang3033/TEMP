@@ -22,13 +22,11 @@ C::~C()
 
 
 int main(argc, argv) {
-    for (auto &&i : v)
-    {
-        
-    }
-    
+    // add some
     for (size_t i = 0; i < count; i++)
     {
+        // can I add more code here?
+        // yes I can
     }
     
     for (int i = length - 1; i >= 0; i--)
