@@ -1,3 +1,4 @@
+#include <iostream>
 #include "function.cc"
 
 using namespace std;
@@ -7,41 +8,46 @@ class C
 private:
     /* data */
     int y;
+
 public:
     C(int x);
     ~C();
+    void print()
+    {
+        cout << y << endl;
+    }
 };
 
 C::C(int x)
 {
-    y = f(x);
+    y = x * x;
 }
 
 C::~C()
 {
 }
 
-
-int main() {
+int main()
+{
     // add some
     for (int i = 0; i < 100; i++)
     {
-        // can I add more code here?
-        // yes I can
+        C c(i);
+        c.print();
     }
-    
+
     for (int i = 10 - 1; i >= 0; i--)
     {
         /* code */
-        //std::cerr << i << endl;
+        std::cerr << i;
 
-        // add more comments into master
-        // add branch-B specific comments
-        if (i > 0) {
-            //std::cerr << i * i ;
+        if (i > 0)
+        {
+            std::cerr << "+" << endl;
+        }
+        else
+        {
+            std::cerr << endl;
         }
     }
-    
-
-
 }
