@@ -39,15 +39,15 @@ int main()
     for (int i = 10 - 1; i >= 0; i--)
     {
         /* code */
-        std::cerr << i;
+        std::cout << i;
 
         if (i > 0)
         {
-            std::cerr << "+" << endl;
+            std::cout << "+" << endl;
         }
         else
         {
-            std::cerr << endl;
+            std::cout << endl;
         }
     }
 }
