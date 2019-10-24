@@ -1,6 +1,6 @@
 class newClass
 {
-private:
+private:        
     /* data */
 public:
     newClass(/* args */);
