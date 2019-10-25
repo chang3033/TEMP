@@ -1,4 +1,4 @@
-int f(int x)
+int func(int x)
 {
     return x * x;
 }   

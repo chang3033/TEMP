@@ -1,40 +1,39 @@
-#include <stdio>
+#include <iostream>
+#include <stdio.h>
 #include "function.cc"
+
+using namespace std;
 
 class myClass
 {
 private:
     int y;
+
 public:
-    myClass(int x);
+    myClass(int x = 0);
     ~myClass();
+    int func(int x) { return x + 1; }
 };
 
 myClass::myClass(int x)
 {
-    y = f(x);
+    y = func(x);
 }
 
 myClass::~myClass()
 {
 }
 
-
-
-int main(argc, argv)
+int main(int argc, char** argv)
 {
-    myClass c();
+    cout << "argc=" << argc << endl;
 
-    for (int i = length - 1; i >= 0; i--)
+    myClass c(argc);
+
+    for (size_t i = 0; i < argc; i++)
     {
-        /* code */
-        fopen("hello.dat")
+        cout << c.func(i) << endl;;
     }
 
-    for (size_t i = 0; i < count; i++)
-    {
-        int y = f(i);
-    }
-
-    int z = f(100);
+    int z = func(100);
 }
