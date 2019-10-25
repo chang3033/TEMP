@@ -35,5 +35,5 @@ int main(int argc, char** argv)
         cout << c.func(i) << endl;;
     }
 
-    int z = func(100);
+    cerr << func(100) << endl;
 }
