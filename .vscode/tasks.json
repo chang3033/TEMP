@@ -12,6 +12,14 @@
             ],
             "options": {
                 "cwd": "C:\\cygwin64\\bin"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
             }
         },
         {
@@ -20,6 +28,7 @@
             "command": "C:\\cygwin64\\bin\\g++.exe",
             "args": [
                 "-g",
+                "-std=c++14",
                 "${file}",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
@@ -27,10 +36,32 @@
             "options": {
                 "cwd": "C:\\cygwin64\\bin"
             },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
             "problemMatcher": [
                 "$gcc"
             ],
             "group": "build"
+        },
+        {
+            "type": "shell",
+            "label": "run active file",
+            "command": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "args": ["a", "b", "c"],
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            }
         }
     ],
     "version": "2.0.0"
