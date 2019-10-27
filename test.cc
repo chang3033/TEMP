@@ -62,7 +62,7 @@ int main()
         cout << "1 == 1 is false" << endl;
     }
 
-    vector<int> V(10, 10);
+    vector<int> V(10, 99);
     for (const auto &v : V)
     {
         std::cout << "global func(" << v << ") = " << func(v) << std::endl;
