@@ -1,4 +1,4 @@
 int func(int x)
 {
-    return x * x;
+    return x + 1;
 }
