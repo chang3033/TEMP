@@ -13,9 +13,6 @@ public:
     myClass(int x = 0);
     ~myClass();
     int func(int x) { return x + 1; }
-
-
-    
 };
 
 myClass::myClass(int x)
@@ -27,7 +24,7 @@ myClass::~myClass()
 {
 }
 
-int main(int argc, char** argv)
+int main(int argc, char **argv)
 {
     cout << "argc=" << argc << endl;
 
@@ -35,7 +32,8 @@ int main(int argc, char** argv)
 
     for (size_t i = 0; i < argc; i++)
     {
-        cout << c.func(i) << endl;;
+        cout << c.func(i) << endl;
+        ;
     }
 
     cerr << func(100) << endl;

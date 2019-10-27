@@ -24,7 +24,7 @@ C::C(int x)
 }
 
 C::~C()
-{ 
+{
 }
 
 int main()
