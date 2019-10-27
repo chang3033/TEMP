@@ -33,6 +33,7 @@ int main()
     for (int i = 0; i < 100; i++)
     {
         C c(i);
+        std::cout << i << ":\t";
         c.print();
     }
 

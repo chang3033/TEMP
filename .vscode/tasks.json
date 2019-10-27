@@ -51,6 +51,26 @@
         },
         {
             "type": "shell",
+            "label": "make.exe make active file",
+            "command": "C:\\cygwin64\\bin\\make.exe",
+            "args": [
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "C:\\cygwin64\\bin"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": true,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "group": "build"
+        },
+        {
+            "type": "process",
             "label": "run active file",
             "command": "${fileDirname}\\${fileBasenameNoExtension}.exe",
             "presentation": {
@@ -60,7 +80,8 @@
                 "panel": "shared",
                 "showReuseMessage": true,
                 "clear": false
-            }
+            },
+            "dependsOn":["g++.exe build active file"]
         }
     ],
     "version": "2.0.0"
