@@ -25,7 +25,7 @@
         {
             "type": "shell",
             "label": "g++.exe build active file",
-            "command": "C:\\mingw-w64\\mingw64\\bin\\g++.exe",
+            "command": "g++",
             "args": [
                 "-g",
                 "${file}",
@@ -50,7 +50,7 @@
         },
         {
             "type": "process",
-            "label": "run active file",
+            "label": "build & run active file",
             "command": "${fileDirname}\\${fileBasenameNoExtension}.exe",
             "presentation": {
                 "echo": true,
