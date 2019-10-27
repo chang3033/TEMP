@@ -13,6 +13,9 @@ public:
     myClass(int x = 0);
     ~myClass();
     int func(int x) { return x + 1; }
+
+
+    
 };
 
 myClass::myClass(int x)

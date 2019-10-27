@@ -6,6 +6,7 @@
             "command": "C:\\cygwin64\\bin\\g++.exe",
             "args": [
                 "-g",
+                "-std=c++14",
                 "${file}",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
@@ -81,7 +82,9 @@
                 "showReuseMessage": true,
                 "clear": false
             },
-            "dependsOn":["g++.exe build active file"]
+            "dependsOn": [
+                "g++.exe build active file"
+            ]
         }
     ],
     "version": "2.0.0"
