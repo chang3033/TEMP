@@ -6,7 +6,6 @@
             "command": "C:\\cygwin64\\bin\\g++.exe",
             "args": [
                 "-g",
-                "-std=c++14",
                 "${file}",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
@@ -29,7 +28,6 @@
             "command": "C:\\cygwin64\\bin\\g++.exe",
             "args": [
                 "-g",
-                "-std=c++14",
                 "${file}",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"

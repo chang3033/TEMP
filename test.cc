@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 #include "function.cc"
 
 using namespace std;
@@ -51,4 +52,23 @@ int main()
             std::cout << endl;
         }
     }
+
+    for (size_t c = 0; c < 10; c++)
+    {
+        std::cout << c << std::endl;
+    }
+
+    if (1 == 1)
+    {
+        cout << "1 == 1" << endl;
+    }
+
+    vector<int> V(10, 0);
+    for (const auto& v : V) {
+        std::cout << v << std::endl;
+    }
+    /***************************************************
+    test__cc
+        October 27, 2019
+    ****************************************************/
 }
