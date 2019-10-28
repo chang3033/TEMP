@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include "function.cc"
+#include "SubDir/newFile.cc"
 
 using namespace std;
 
@@ -58,7 +59,8 @@ int main()
     {
         cout << "1 == 1 is true" << endl;
     }
-    else {
+    else
+    {
         cout << "1 == 1 is false" << endl;
     }
 
