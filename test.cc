@@ -43,6 +43,8 @@ int main() {
         if (i > 0) {
             //std::cerr << i * i ;
         }
+        cerr << i << endl;
+        // added some comments in branch A
     }
     
 
